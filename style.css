@@ -27,6 +27,16 @@ label {
     margin-bottom: 10px;
 }
 
+
+input[type="date"] {
+    background-color: red;
+    outline: #701a75;
+  }
+  
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    font-size: 25px;
+  }
+
 #btn {
     margin-top: 20px;
     background-color: #f0abfc;

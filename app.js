@@ -46,13 +46,6 @@ function allFormateOfDate(dateObj) {
     let day = dateObjStr.day;
     let month = dateObjStr.month;
     let year = dateObjStr.year;
-    // DD-MM-YYYY
-    // MM-DD-YYYY
-    // YYYY-MM-DD
-    // DD-MM-YY
-    // MM-DD-YY
-    // YY-MM-DD
-
     let ddmmyyyy = day + month + year;
     let mmddyyyy = month + day + year;
     let yyyymmdd = year + month + day;
@@ -61,8 +54,6 @@ function allFormateOfDate(dateObj) {
     let yymmdd = year.slice(2, 4) + month + day;
     return [ddmmyyyy, mmddyyyy, yyyymmdd, ddmmyy, mmddyy, yymmdd];
 }
-
-
 function checkPalindromeForAllFormat(dateObj) {
     var allDateFormat = allFormateOfDate(dateObj);
     let flag = false;
@@ -169,8 +160,6 @@ function decreaseDate(date) {
         year: year
     }
 }
-
-
 function getPastPalindromeDate(dateObj) {
     if (checkPalindromeForAllFormat(dateObj)) {
         message = "Your birthdate is palindrome!!"
